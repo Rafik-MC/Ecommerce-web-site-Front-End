@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products Mou-Fik Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+ <body>
+     <div class="container">
+       <div class="navbar">
+           <div class=".logo">
+             <a href="index.html"><img src="images/logo9.png" width="150px"></a>
+           </div> 
+           <nav>
+             <ul id="MenuItems">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="Product.html">Product</a></li>
+               <li><a href="">About</a></li>                 
+               <li><a href="">Contact</a></li>
+               <li><a href="account.html">Account</a></li> 
+             </ul>
+           </nav>
+           <a href="cart.html"><img src="images/shopping-cart.png" width=30px height="=30px"></a>
+           <img src="images/menu2.png" class="menu-icon" onclick="menutoggle()">
+         </div>
+       </div>
+
+   <!----------cart items details---------->
+   <div class="small_container cart-page">
+     
+     <table>
+       <tr>
+         <th>Product</th>
+         <th>Quantity</th>
+         <th>Subtotal</th>
+       </tr>
+       <tr>
+         <td>
+          <div class="cart-info">
+              <img src="images/drap3.png">
+            <div>
+              <p>Drap Salon 54</p>
+              <small>Price: 1500.00 DZD</small><br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+
+         </td>
+         <td><input type="number" value="1"></td>
+         <td>1500.00DZD</td>
+       </tr>
+       <tr>
+         <td>
+          <div class="cart-info">
+              <img src="images/drap4.png">
+            <div>
+              <p>Drap Salon 55</p>
+              <small>Price: 1500.00 DZD</small><br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+
+         </td>
+         <td><input type="number" value="1"></td>
+         <td>1500.00DZD</td>
+       </tr>
+       <tr>
+         <td>
+          <div class="cart-info">
+              <img src="images/drap2.png">
+            <div>
+              <p>Drap Salon 53</p>
+              <small>Price: 1500.00 DZD</small><br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+
+         </td>
+         <td><input type="number" value="1"></td>
+         <td>1500.00DZD</td>
+       </tr>
+     </table>
+     <div class="total-price">
+       <table>
+         <tr>
+           <td>Product price</td>
+           <td>4500.00 DZD</td>
+         </tr>
+         <tr>
+           <td>Dellivery</td>
+           <td>400.00 DZD</td>
+         </tr>
+         <tr>
+           <td>Total</td>
+           <td>4900.00 DZD</td>
+         </tr>
+       </table>
+     </div>
+   </div><br><br>
+
+   <!----------footer---------->
+   <div class="footer">
+     <div class="container">
+       <div class="row">
+         <div class="footer-col-1">
+           <h3>Download Our App</h3>
+           <p>Download App for Andriod and ios mobile phone</p>
+           <div class="app-logo">
+             <img src="images/google play store logo.png">
+             <img src="images/app store logo.png">
+           </div>
+         </div>
+         <div class="footer-col-2">
+           <img src="images/logo.png">
+           <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to The Many</p>
+         </div>
+         <div class="footer-col-3">
+           <h3>Useful Links</h3>
+           <ul>
+             <li>Coupons</li>
+             <li>Blog Post</li>
+             <li>Return Policy</li>
+             <li>Join Affiliate</li>
+           </ul>
+         </div>
+         <div class="footer-col-4">
+           <h3>Follow US</h3>
+           <ul>
+             <li>Facebook</li>
+             <li>Instagram</li>
+             <li>Tiktok</li>
+             <li>Youtube</li>
+           </ul>
+         </div>
+       </div>
+       <hr>
+       <p class="copyright">Copyright 2023 - Bouras Med-Rafik Dev </p>
+     </div>
+   </div>
+   <!----------js for toggle menu---------->
+      <script>
+        var MenuItems = document.getElementById("MenuItems");
+       
+        MenuItems.style.maxHeight = "0px";
+       
+        function menutoggle(){
+          if(MenuItems.style.maxHeight == "0px")
+          {
+            MenuItems.style.maxHeight = "200px"
+          }
+          else
+          {
+            MenuItems.style.maxHeight = "0px"
+          }
+        }
+     </script> 
+ </body>
+</html>  
